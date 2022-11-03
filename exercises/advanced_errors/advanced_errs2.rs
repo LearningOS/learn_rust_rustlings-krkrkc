@@ -42,7 +42,7 @@ impl From<ParseIntError> for ParseClimateError {
 }
 
 // This `From` implementation allows the `?` operator to work on
-// `ParseFloatError` values.
+// `ParseFloatError` values
 impl From<ParseFloatError> for ParseClimateError {
     fn from(e: ParseFloatError) -> Self {
         // TODO: Complete this function
